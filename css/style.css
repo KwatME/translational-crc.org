@@ -138,44 +138,6 @@ ul.pagination .active a,
   bottom: 0;
 }
 
-.text-overlay:after {
-  content: "CONFERENCE";
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 215px;
-  width: 100%;
-  height: 300px;
-  background-position: center center;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  opacity: 0.05;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-@media (max-width: 767px) {
-  .text-overlay:after {
-    font-size: 100px;
-  }
-}
-
-@media (max-width: 575px) {
-  .text-overlay:after {
-    font-size: 70px;
-  }
-}
-
-.overlay-primary:before {
-  content: "";
-  background: rgba(255, 102, 0, 0.93);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
 .overlay-dark:before {
   content: "";
   background: -webkit-linear-gradient(
@@ -208,26 +170,6 @@ ul.pagination .active a,
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.overlay-white-slant:before {
-  content: "";
-  width: 100%;
-  margin-left: -45%;
-  background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-transform: skewX(-20deg);
-  transform: skewX(-20deg);
-}
-
-@media (max-width: 767px) {
-  .overlay-white-slant:before {
-    content: none;
-  }
 }
 
 span.alternate {
@@ -1284,18 +1226,6 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 
-.speakers .speaker-item .image .primary-overlay {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ff6600;
-  opacity: 0.85;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
 .speakers .speaker-item .image .socials {
   position: absolute;
   top: 100%;
@@ -1372,10 +1302,6 @@ select.form-control:not([size]):not([multiple]) {
 
 .speakers .speaker-item .image .socials ul li a:hover i {
   color: #222222;
-}
-
-.speakers .speaker-item .image:hover .primary-overlay {
-  top: 0;
 }
 
 .speakers .speaker-item .image:hover .socials {
@@ -2803,70 +2729,6 @@ select.form-control:not([size]):not([multiple]) {
   width: 100%;
 }
 
-.speakers-full-width .speaker-slider .speaker-image .primary-overlay {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ff6600;
-  opacity: 0.85;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.speakers-full-width .speaker-slider .speaker-image .primary-overlay h5,
-.speakers-full-width .speaker-slider .speaker-image .primary-overlay p,
-.speakers-full-width .speaker-slider .speaker-image .primary-overlay i {
-  color: #fff;
-}
-
-.speakers-full-width .speaker-slider .speaker-image .primary-overlay h5,
-.speakers-full-width .speaker-slider .speaker-image .primary-overlay p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-}
-
-.speakers-full-width .speaker-slider .speaker-image .primary-overlay h5 {
-  padding-top: 25%;
-  margin-bottom: 10px;
-}
-
-.speakers-full-width .speaker-slider .speaker-image .primary-overlay h5,
-.speakers-full-width .speaker-slider .speaker-image .primary-overlay ul,
-.speakers-full-width .speaker-slider .speaker-image .primary-overlay p {
-  -webkit-transition: 0.7s ease;
-  transition: 0.7s ease;
-  -webkit-transform: translate(0, 30px);
-  transform: translate(0, 30px);
-  opacity: 0;
-}
-
-.speakers-full-width .speaker-slider .speaker-image .primary-overlay p {
-  margin-bottom: 10px;
-}
-
-.speakers-full-width
-  .speaker-slider
-  .speaker-image
-  .primary-overlay
-  ul
-  .list-inline-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.speakers-full-width .speaker-slider .speaker-image:hover .primary-overlay {
-  top: 0;
-}
-
-.speakers-full-width .speaker-slider .speaker-image:hover .primary-overlay h5,
-.speakers-full-width .speaker-slider .speaker-image:hover .primary-overlay p,
-.speakers-full-width .speaker-slider .speaker-image:hover .primary-overlay ul {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
 .speakers-full-width .speaker-slider .slick-prev {
   left: 60px;
 }
@@ -2965,47 +2827,6 @@ select.form-control:not([size]):not([multiple]) {
   width: 100%;
 }
 
-.gallery-wrapper .gallery-item .image-block .image .primary-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ff6600;
-  opacity: 0;
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.gallery-wrapper .gallery-item .image-block .image .primary-overlay a {
-  display: block;
-  height: 55px;
-  width: 55px;
-  text-align: center;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  outline: none;
-}
-
-.gallery-wrapper .gallery-item .image-block .image .primary-overlay a i {
-  color: #fff;
-  line-height: 55px;
-  font-size: 1.25rem;
-}
-
-.gallery-wrapper .gallery-item .image-block .image:hover .primary-overlay {
-  opacity: 0.85;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
 .gallery-wrapper .mix,
 .gallery-wrapper .gap {
   display: inline-block;
@@ -3055,47 +2876,6 @@ select.form-control:not([size]):not([multiple]) {
 
 .gallery-full .image img {
   width: 100%;
-}
-
-.gallery-full .image .primary-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ff6600;
-  opacity: 0;
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.gallery-full .image .primary-overlay a {
-  display: block;
-  height: 55px;
-  width: 55px;
-  text-align: center;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  outline: none;
-}
-
-.gallery-full .image .primary-overlay a i {
-  color: #fff;
-  line-height: 55px;
-  font-size: 1.25rem;
-}
-
-.gallery-full .image:hover .primary-overlay {
-  opacity: 0.85;
-  -webkit-transform: scale(1);
-  transform: scale(1);
 }
 
 .news .blog-post {

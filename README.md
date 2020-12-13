@@ -1,3 +1,5 @@
+Website for Translational Colorectal Cancer
+
 ## Old website
 
 https://www.mdanderson.org/education-training/professional-education/cme-conference-management/conferences/translational-colorectal-cancer.html
@@ -25,3 +27,5 @@ Test all link
 Remove my placeholder pictures
 
 Set up URL
+
+Add Duke logo

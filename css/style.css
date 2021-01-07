@@ -7,6 +7,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  padding-top: 64px;
 }
 
 h1,
@@ -562,7 +563,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .main-nav .navbar-brand {
-  padding: 2%;
+  padding: 8px;
 }
 
 @media (max-width: 1200px) {
@@ -592,7 +593,7 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 1352px) {
   .main-nav .navbar-nav .nav-item .nav-link {
-    font-size: 0.75rem;
+    font-size: 1.24rem;
     padding-left: 5px;
     padding-right: 10px;
   }
@@ -706,12 +707,6 @@ select.form-control:not([size]):not([multiple]) {
   margin: 2%;
 }
 
-@media (max-width: 1200px) {
-  .main-nav .ticket {
-    padding: 1%;
-  }
-}
-
 @media (max-width: 991px) {
   .main-nav .ticket {
     text-align: center;
@@ -739,7 +734,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .page-title {
   position: relative;
-  padding: 165px 0 65px;
+  padding: 110px 0 65px;
 }
 
 .page-title h3,

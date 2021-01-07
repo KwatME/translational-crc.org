@@ -10,6 +10,22 @@ https://kwatme.github.io/translational-colorectal-cancer/
 
 ## To do (ranked by priority)
 
+All old website information is in the new website.
+
+Speaker picture
+
+Welcome picture
+
+Talk titles
+
+Contact us
+
+Sponsors
+
+URL
+
+Brochure
+
 Make sure all information in the old website is in the new website
 
 Get speaker pictures

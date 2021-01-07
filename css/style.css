@@ -602,17 +602,17 @@ select.form-control:not([size]):not([multiple]) {
   position: relative;
   text-align: center;
   color: #222222;
-  padding-left: 8px;
-  padding-right: 20px;
-  font-size: 1.06rem;
+  padding-left: 64px;
+  padding-right: 64;
+  font-size: 1.24rem;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 @media (max-width: 1352px) {
   .main-nav .navbar-nav .nav-item .nav-link {
     font-size: 1.24rem;
-    font-weight: 500;
-    padding-left: 5px;
+    padding-left: 10px;
     padding-right: 10px;
   }
 }

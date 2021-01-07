@@ -2,4 +2,8 @@ Website for Translational Colorectal Cancer
 
 ## To do
 
-Link translational-crc.org
+Organize speaker section
+
+Make speaker section picture clickable
+
+Make link in more.html work

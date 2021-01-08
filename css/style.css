@@ -481,6 +481,14 @@ select.form-control:not([size]):not([multiple]) {
   transition: all .3s ease;
 }
 
+.xxx {
+	background-color: #203838;
+}
+
+.xxx:hover {
+	background-color: inherit;
+}
+
 .btn-main {
   padding: 25px 45px;
   border-radius: 3px;

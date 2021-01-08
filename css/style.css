@@ -73,6 +73,10 @@ ul.social-links li a i {
   box-shadow: 0px 0px 30px 0px rgba(11, 29, 66, 0.15);
 }
 
+.taller-line {
+  line-height: 1.5em;
+}
+
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1222,6 +1226,19 @@ select.form-control:not([size]):not([multiple]) {
 
 .speakers {
   position: relative;
+}
+
+.speaker-group-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  justify-content: center;
+}
+
+.speaker-group-title {
+  justify-content:center;
+  line-height:5em !important;
 }
 
 .speakers.white .speaker-item {

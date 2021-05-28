@@ -1405,9 +1405,11 @@
               },
               t = "transition";
 
-            cssObj["-webkit-" + t] = cssObj["-moz-" + t] = cssObj[
-              "-o-" + t
-            ] = cssObj[t] = transition;
+            cssObj["-webkit-" + t] =
+              cssObj["-moz-" + t] =
+              cssObj["-o-" + t] =
+              cssObj[t] =
+                transition;
 
             newImg.css(cssObj);
             return newImg;

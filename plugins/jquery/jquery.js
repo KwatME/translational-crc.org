@@ -4504,8 +4504,11 @@
   // Support: IE9
   wrapMap.optgroup = wrapMap.option;
 
-  wrapMap.tbody = wrapMap.tfoot = wrapMap.colgroup = wrapMap.caption =
-    wrapMap.thead;
+  wrapMap.tbody =
+    wrapMap.tfoot =
+    wrapMap.colgroup =
+    wrapMap.caption =
+      wrapMap.thead;
   wrapMap.th = wrapMap.td;
 
   function getAll(context, tag) {
@@ -5398,7 +5401,8 @@
     },
   });
 
-  var rxhtmlTag = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:-]+)[^>]*)\/>/gi,
+  var rxhtmlTag =
+      /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:-]+)[^>]*)\/>/gi,
     // Support: IE 10-11, Edge 10240+
     // In IE/Edge using regex groups here causes severe slowdowns.
     // See https://connect.microsoft.com/IE/feedback/details/1736512/
@@ -7157,10 +7161,8 @@
       );
       if (result) {
         if (jQuery.isFunction(result.stop)) {
-          jQuery._queueHooks(
-            animation.elem,
-            animation.opts.queue
-          ).stop = jQuery.proxy(result.stop, result);
+          jQuery._queueHooks(animation.elem, animation.opts.queue).stop =
+            jQuery.proxy(result.stop, result);
         }
         return result;
       }
@@ -8426,7 +8428,8 @@
     rts = /([?&])_=[^&]*/,
     rheaders = /^(.*?):[ \t]*([^\r\n]*)$/gm,
     // #7653, #8125, #8152: local protocol detection
-    rlocalProtocol = /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,
+    rlocalProtocol =
+      /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,
     rnoContent = /^(?:GET|HEAD)$/,
     rprotocol = /^\/\//,
     /* Prefilters
@@ -9518,7 +9521,13 @@
           callback = function (type) {
             return function () {
               if (callback) {
-                callback = errorCallback = xhr.onload = xhr.onerror = xhr.onabort = xhr.onreadystatechange = null;
+                callback =
+                  errorCallback =
+                  xhr.onload =
+                  xhr.onerror =
+                  xhr.onabort =
+                  xhr.onreadystatechange =
+                    null;
 
                 if (type === "abort") {
                   xhr.abort();

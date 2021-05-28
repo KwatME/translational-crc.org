@@ -968,23 +968,21 @@ if (typeof jQuery === "undefined") {
         return slideEvent;
       };
 
-      Carousel.prototype._setActiveIndicatorElement = function _setActiveIndicatorElement(
-        element
-      ) {
-        if (this._indicatorsElement) {
-          $(this._indicatorsElement)
-            .find(Selector.ACTIVE)
-            .removeClass(ClassName.ACTIVE);
+      Carousel.prototype._setActiveIndicatorElement =
+        function _setActiveIndicatorElement(element) {
+          if (this._indicatorsElement) {
+            $(this._indicatorsElement)
+              .find(Selector.ACTIVE)
+              .removeClass(ClassName.ACTIVE);
 
-          var nextIndicator = this._indicatorsElement.children[
-            this._getItemIndex(element)
-          ];
+            var nextIndicator =
+              this._indicatorsElement.children[this._getItemIndex(element)];
 
-          if (nextIndicator) {
-            $(nextIndicator).addClass(ClassName.ACTIVE);
+            if (nextIndicator) {
+              $(nextIndicator).addClass(ClassName.ACTIVE);
+            }
           }
-        }
-      };
+        };
 
       Carousel.prototype._slide = function _slide(direction, element) {
         var _this5 = this;
@@ -1516,20 +1514,18 @@ if (typeof jQuery === "undefined") {
         return parent;
       };
 
-      Collapse.prototype._addAriaAndCollapsedClass = function _addAriaAndCollapsedClass(
-        element,
-        triggerArray
-      ) {
-        if (element) {
-          var isOpen = $(element).hasClass(ClassName.SHOW);
+      Collapse.prototype._addAriaAndCollapsedClass =
+        function _addAriaAndCollapsedClass(element, triggerArray) {
+          if (element) {
+            var isOpen = $(element).hasClass(ClassName.SHOW);
 
-          if (triggerArray.length) {
-            $(triggerArray)
-              .toggleClass(ClassName.COLLAPSED, !isOpen)
-              .attr("aria-expanded", isOpen);
+            if (triggerArray.length) {
+              $(triggerArray)
+                .toggleClass(ClassName.COLLAPSED, !isOpen)
+                .attr("aria-expanded", isOpen);
+            }
           }
-        }
-      };
+        };
 
       // static
 
@@ -4065,12 +4061,11 @@ if (typeof jQuery === "undefined") {
         }
       };
 
-      Tooltip.prototype._handlePopperPlacementChange = function _handlePopperPlacementChange(
-        data
-      ) {
-        this._cleanTipClass();
-        this.addAttachmentClass(this._getAttachment(data.placement));
-      };
+      Tooltip.prototype._handlePopperPlacementChange =
+        function _handlePopperPlacementChange(data) {
+          this._cleanTipClass();
+          this.addAttachmentClass(this._getAttachment(data.placement));
+        };
 
       Tooltip.prototype._fixTransition = function _fixTransition() {
         var tip = this.getTipElement();
